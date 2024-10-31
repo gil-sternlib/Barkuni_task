@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: barkuni-app-service
+spec:
+  selector:
+    app: barkuni-app
+  ports:
+    - port: 80
+      targetPort: 5000
+  type: NodePort

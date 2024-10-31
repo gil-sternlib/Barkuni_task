@@ -6,6 +6,7 @@ module "lb_role" {
 
   attach_load_balancer_controller_policy = true
 
+
   oidc_providers = {
     main = {
       provider_arn               = var.oidc_provider_arn
